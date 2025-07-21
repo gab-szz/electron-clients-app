@@ -20,9 +20,33 @@
     "build:mac": "electron-vite build && electron-builder --mac",
     "build:linux": "electron-vite build && electron-builder --linux"
   },
+  "build": {
+    "appId": "com.dev.electronclientsapp",
+    "productName": "ElectronClientsApp",
+    "files": [
+      "out",
+      "dist",
+      "node_modules",
+      "package.json"
+    ],
+    "directories": {
+      "output": "release"
+    },
+    "win": {
+      "target": "portable",
+      "sign": false,
+      "icon": "resources/icon.ico"
+    },
+    "asarUnpack": [],
+    "publish": null
+  },
   "dependencies": {
+    "@chakra-ui/react": "^3.22.0",
     "@electron-toolkit/preload": "^3.0.1",
-    "@electron-toolkit/utils": "^4.0.0"
+    "@electron-toolkit/utils": "^4.0.0",
+    "@emotion/react": "^11.14.0",
+    "next-themes": "^0.4.6",
+    "react-icons": "^5.5.0"
   },
   "devDependencies": {
     "@electron-toolkit/eslint-config-prettier": "^3.0.0",
@@ -43,6 +67,7 @@
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
     "typescript": "^5.8.3",
-    "vite": "^6.2.6"
+    "vite": "^6.2.6",
+    "vite-tsconfig-paths": "^5.1.4"
   }
 }
