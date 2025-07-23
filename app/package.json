@@ -27,7 +27,8 @@
       "out",
       "dist",
       "node_modules",
-      "package.json"
+      "package.json",
+      ".env"
     ],
     "directories": {
       "output": "release"
@@ -49,14 +50,17 @@
     "electron-router-dom": "^1.0.5",
     "framer-motion": "^12.23.6",
     "next-themes": "^0.4.6",
+    "oracledb": "^6.9.0",
     "react-icons": "^5.5.0",
-    "react-router-dom": "^7.7.0"
+    "react-router-dom": "^7.7.0",
+    "zod": "^4.0.5"
   },
   "devDependencies": {
     "@electron-toolkit/eslint-config-prettier": "^3.0.0",
     "@electron-toolkit/eslint-config-ts": "^3.0.0",
     "@electron-toolkit/tsconfig": "^1.0.1",
     "@types/node": "^22.14.1",
+    "@types/oracledb": "^6.6.2",
     "@types/react": "^19.1.1",
     "@types/react-dom": "^19.1.2",
     "@vitejs/plugin-react": "^4.3.4",
